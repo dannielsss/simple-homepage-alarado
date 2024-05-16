@@ -329,7 +329,6 @@ main {
   @media (width <= 1024px) {
     flex-direction: column-reverse;
     gap: 5rem;
-    justify-content: center;
     margin: 6rem auto;
     width: 75%;
 
