@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Homepage</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="app">
+    <nav>
+      <header>
+        <img
+          src="./images/alarado-icon-homepage.svg"
+          alt=""
+          id="alarado-icon-img"
+        />
+        <button class="toggle-nav" id="toggle-nav-btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+      </header>
+      <ul class="nav-items" id="nav-items">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Resource</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="switch-theme" id="switch-theme-btn">
+        <div>
+          <img src="./images/Moon_fill_light.svg" alt="" id="moon" />
+        </div>
+        <div class="active">
+          <img src="./images/Sun_fill.svg" alt="" id="sun" />
+        </div>
+      </button>
+      <button class="close-nav" id="close-nav-btn">
+        <div></div>
+      </button>
+    </nav>
+    <main>
+      <section>
+        <header>
+          <p>😎 SIMPLE WAY TO COMMUNICATE</p>
+          <h1>Actions for Accessibility in Design</h1>
+        </header>
+        <p class="description">
+          The fastest way to build and deploy websites with resusable components
+        </p>
+        <div class="links">
+          <a href="#" class="get-started-a">GET STARTED</a>
+          <a href="#" class="get-live-demo-a">Get live demo</a>
+        </div>
+        <footer>
+          <p>
+            <img src="./images/Done_ring_round_fill.svg" alt="" /> No credit
+            card required
+          </p>
+          <p>
+            <img src="./images/Done_ring_round_fill.svg" alt="" />No software to
+            install
+          </p>
+        </footer>
+      </section>
+      <img
+        src="./images/hero-image-simple-homepage.png"
+        alt=""
+        class="hero-image"
+      />
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
