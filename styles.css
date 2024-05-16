@@ -210,7 +210,7 @@ nav {
 
   @media (width >= 640px) {
     ul {
-      justify-content: center;
+      justify-content: flex-end;
     }
   }
 }
