@@ -27,6 +27,27 @@ body {
   }
 }
 
+@keyframes start-animation {
+  0% {
+    transform: translate(200px);
+  }
+
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes close-animation {
+  0% {
+    display: flex;
+    transform: translate(0px);
+  }
+
+  100% {
+    transform: translate(200px);
+  }
+}
+
 /*===  Themes styles ===*/
 .dark {
   background: #111729;
@@ -156,6 +177,7 @@ nav {
     height: 20px;
 
     position: fixed;
+    top: 30px;
     right: 30px;
 
     &:hover {
@@ -196,6 +218,12 @@ nav {
 
     .show-nav {
       display: flex;
+      animation: start-animation 0.5s ease;
+    }
+
+    .hidden-nav {
+      display: flex;
+      animation: close-animation 0.5s ease;
     }
 
     .nav-items {

@@ -41,12 +41,18 @@ switchThemeBtn.addEventListener('click', () => {
 
 toggleNavBtn.addEventListener('click', () => {
   navItems.classList.toggle('show-nav');
-  switchThemeBtn.classList.toggle('show-nav');
   closeNavBtn.classList.toggle('show-nav');
 });
 
 closeNavBtn.addEventListener('click', () => {
   navItems.classList.toggle('show-nav');
-  switchThemeBtn.classList.toggle('show-nav');
   closeNavBtn.classList.toggle('show-nav');
+
+  navItems.classList.add('hidden-nav');
+  closeNavBtn.classList.add('hidden-nav');
+
+  setTimeout(() => {
+    navItems.classList.remove('hidden-nav');
+    closeNavBtn.classList.remove('hidden-nav');
+  }, 400);
 });
