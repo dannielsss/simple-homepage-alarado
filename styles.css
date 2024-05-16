@@ -99,6 +99,7 @@ nav {
 
   ul {
     display: flex;
+    width: 100%;
     align-items: center;
     gap: 2rem;
 
@@ -144,15 +145,6 @@ nav {
 
     .active {
       background: #ffffff;
-    }
-
-    @media (width <= 640px) {
-      display: none;
-      width: 70px;
-
-      position: fixed;
-      right: 65px;
-      bottom: 450px;
     }
   }
 
@@ -213,6 +205,12 @@ nav {
       right: 0;
       width: 200px;
       height: 100%;
+    }
+  }
+
+  @media (width >= 640px) {
+    ul {
+      justify-content: center;
     }
   }
 }
