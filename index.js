@@ -16,18 +16,10 @@ const sun = document.getElementById('sun');
 const moon = document.getElementById('moon');
 
 const app = document.getElementById('app');
-const currentTheme = app.classList[0];
 
-switchThemeBtn.addEventListener('click', () => handleToggleTheme(currentTheme));
-toggleNavBtn.addEventListener('click', () => handleToggleNav(true));
-closeNavBtn.addEventListener('click', () => handleToggleNav(false));
-
-/**
- *
- * @param {string} currentTheme
- */
-const handleToggleTheme = (currentTheme) => {
+const handleToggleTheme = () => {
   app.classList.toggle('dark');
+  const currentTheme = app.classList[0];
 
   if (currentTheme === 'dark') {
     moon.parentElement.classList.add('active');
@@ -69,3 +61,7 @@ const handleToggleNav = (show) => {
     closeNavBtn.classList.remove('hidden-nav');
   }, 400);
 };
+
+switchThemeBtn.addEventListener('click', () => handleToggleTheme());
+toggleNavBtn.addEventListener('click', () => handleToggleNav(true));
+closeNavBtn.addEventListener('click', () => handleToggleNav(false));
